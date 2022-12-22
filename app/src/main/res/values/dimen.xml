@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="my_main_text">36dp</dimen>
+    <dimen name="main_layout_gameView">300dp</dimen>
+    <dimen name="margin_main">12dp</dimen>
+    <dimen name="TextSize_main">30dp</dimen>
+    <dimen name="layout_height_main">50dp</dimen>
+    <dimen name="layout_margin_main">12dp</dimen>
+    <dimen name="TextSize_button_main">30dp</dimen>
+</resources>

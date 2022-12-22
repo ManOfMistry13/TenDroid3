@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/Colors"
+        android:checkable="false"
+        android:enabled="true"
+        android:orderInCategory="1"
+        android:title="Background Colors"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/grey"
+                android:title="Grey" />
+            <item
+                android:id="@+id/vert"
+                android:title="Vert" />
+            <item
+                android:id="@+id/orange"
+                android:title="Orange" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/AfficheScore"
+        android:title="Score"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+
+
+
+
+
+</menu>

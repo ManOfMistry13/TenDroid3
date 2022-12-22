@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    >
+
+    <include
+        android:id="@+id/Toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.example.get10.GameView
+            android:id="@+id/boardSurface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/TEXT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Player : nom "
+        android:textSize="30dp"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/blue"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="244dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="130dp"
+        android:text="Score : 0 "
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:freezesText="true"
+        android:textColor="@color/blue"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="onClickQuit"
+            android:text="@string/quit"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onClickReset"
+            android:text="RESET" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

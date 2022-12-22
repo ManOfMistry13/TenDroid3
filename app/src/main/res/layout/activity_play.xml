@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    >
+
+    <include
+        android:id="@+id/Toolbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <TextView
+        android:id="@+id/TEXT"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:text="Player : nom "
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Score : 0 "
+        android:layout_marginTop="120dp"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:freezesText="true"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        >
+
+        <!--Mobile size-->
+        <LinearLayout
+            android:layout_width="@dimen/main_layout_gameView"
+            android:layout_height="@dimen/main_layout_gameView"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:orientation="vertical">
+
+            <com.example.get10.GameView
+                android:id="@+id/boardSurface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+        </LinearLayout>
+
+        <!--Tablet size-->
+        <!--LinearLayout
+            android:layout_width="@dimen/main_layout_gameView"
+            android:layout_height="@dimen/main_layout_gameView"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:orientation="vertical">
+
+            <com.example.get10.GameView
+                android:id="@+id/boardSurface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="onClickQuit"
+                android:text="@string/quit"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClickReset"
+                android:text="RESET" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
